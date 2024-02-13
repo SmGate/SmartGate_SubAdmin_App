@@ -44,9 +44,11 @@ class HomeScreen extends GetView {
                           color: HexColor('#FF9900')),
                     ),
                     10.ph,
-                    Container(
-                      child: Center(
-                          child: SvgPicture.asset('assets/splashsvg.svg')),
+                    Expanded(
+                      child: Container(
+                        child: Center(
+                            child: SvgPicture.asset('assets/splashsvg.svg')),
+                      ),
                     )
                   ],
                 )),
