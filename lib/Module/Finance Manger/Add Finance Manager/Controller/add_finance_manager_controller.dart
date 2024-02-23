@@ -31,7 +31,7 @@ class AddFinanceManagerController extends GetxController {
   late final User user;
   @override
   void onInit() {
-    // TODO: implement onInit
+  
     super.onInit();
     user = arguments;
   }

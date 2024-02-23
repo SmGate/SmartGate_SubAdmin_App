@@ -37,7 +37,7 @@ class UpdateEventScreenController extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
+    
     super.onInit();
     user = arguments[0];
 

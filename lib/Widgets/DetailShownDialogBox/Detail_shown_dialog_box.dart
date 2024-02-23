@@ -18,7 +18,7 @@ class DetailShownDialogBox extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       
       children: [
-        SvgPicture.asset(icon!),
+        SvgPicture.asset(icon!,height: 15,),
         10.pw,
         Expanded(
           child: Column(

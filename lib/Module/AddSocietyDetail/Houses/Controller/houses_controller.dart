@@ -42,8 +42,7 @@ class HouseController extends GetxController {
 
   @override
   void onInit() async {
-    // TODO: implement onInit
-
+   
     // sid=data[0];
     // bid=data[1];
     // pid=data[2];

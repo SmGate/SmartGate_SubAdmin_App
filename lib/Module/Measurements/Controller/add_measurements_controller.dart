@@ -1,12 +1,9 @@
 import 'dart:convert';
-
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:http/http.dart' as Http;
-
 import '../../../Constants/api_routes.dart';
 import '../../../../Model/User.dart';
-
 import '../../../Routes/set_routes.dart';
 import '../Model/MeasurementModel.dart';
 
@@ -27,7 +24,7 @@ class AddMeasurementController extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
+   
     super.onInit();
 
     user = userdata;
@@ -150,7 +147,7 @@ class AddMeasurementController extends GetxController {
     double app_percentage = 2;
     double tax_percentage = 15;
     double after_due_date_fine = 0.05;
-    double app_charges = serviceCharges! * (app_percentage / 100);
+    double app_charges = serviceCharges * (app_percentage / 100);
     double tax_charges = serviceCharges * (tax_percentage / 100);
     double late_charges = (serviceCharges * after_due_date_fine);
     double after_duedate_charges =

@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -37,7 +39,7 @@ class ReportsScreenCard extends StatelessWidget {
       padding: EdgeInsets.only(left: 24.w, right: 24.w, top: 32.h),
       child: Container(
         width: 327.w,
-        height: 92.w,
+      // height: 200.w,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(18.r),
           border: Border.all(
@@ -71,7 +73,7 @@ class ReportsScreenCard extends StatelessWidget {
                                 BorderRadius.circular(6.400000095367432.r),
                             color: Colors.white,
                             image: DecorationImage(
-                                image: NetworkImage(img.toString()!),
+                                image: NetworkImage(img.toString()),
                                 fit: BoxFit.cover),
                           )),
                       imageUrl: img.toString(),
@@ -134,6 +136,7 @@ class ReportsScreenCard extends StatelessWidget {
                           ),
                         ],
                       ),
+                      10.ph
                     ],
                   ),
                 ],

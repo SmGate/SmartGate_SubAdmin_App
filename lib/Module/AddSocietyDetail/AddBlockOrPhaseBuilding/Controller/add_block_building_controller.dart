@@ -20,7 +20,7 @@ class AddBlockBuildingController extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
+   
 
     super.onInit();
     user = data[0];

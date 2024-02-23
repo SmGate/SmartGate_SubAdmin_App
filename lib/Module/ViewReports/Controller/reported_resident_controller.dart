@@ -20,7 +20,7 @@ class ResidentsListController extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
+    
     super.onInit();
     userdata = this.user;
     print("init ${userdata.userid!}");

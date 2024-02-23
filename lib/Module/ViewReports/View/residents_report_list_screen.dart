@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -73,7 +75,7 @@ class UserReportsListScreen extends StatelessWidget {
                                             children: [
                                               Center(
                                                 child: Text(
-                                                    'Report Detail' ?? "",
+                                                    'Report Detail' ,
                                                     style: GoogleFonts.ubuntu(
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -221,7 +223,7 @@ class UserReportsListScreen extends StatelessWidget {
                                 itemCount: snapshot.data!.length,
                               );
                             } else {
-                              return Text('no resident');
+                              return Center(child: Text('no resident'));
                             }
                           } else if (snapshot.hasError) {
                             return Icon(Icons.error_outline);

@@ -22,7 +22,7 @@ class ResidentReportsController extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
+   
     super.onInit();
     userdata = this.user[0];
     residentId = user[1];

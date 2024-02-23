@@ -28,7 +28,7 @@ class AddGateKeeperScreenController extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
+  
     super.onInit();
     user = arguments;
   }
@@ -42,7 +42,7 @@ class AddGateKeeperScreenController extends GetxController {
 
     if (pickedFile != null) {
       print('file picked: $pickedFile');
-      // img = pickedFile as Image?;
+    
 
       print('Assigning Image file');
       imageFile = File(pickedFile.path);

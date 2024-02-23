@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:dropdown_search/dropdown_search.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -69,8 +71,8 @@ class ApartmentResidentVerification extends GetView {
                                 print(filter);
                                 return controller.viewAllBuildingApi(
                                   bearerToken:
-                                      controller.userdata!.bearerToken!,
-                                  subAdminId: controller.userdata!.userid,
+                                      controller.userdata.bearerToken!,
+                                  subAdminId: controller.userdata.userid,
                                 );
                               },
                               onChanged: (Building? data) {
@@ -91,7 +93,7 @@ class ApartmentResidentVerification extends GetView {
                                 print(filter);
                                 return controller.viewAllFloorApi(
                                     bearerToken:
-                                        controller.userdata!.bearerToken!,
+                                        controller.userdata.bearerToken!,
                                     buildingid: controller.building?.id);
                               },
                               onChanged: (Floor? data) {
@@ -112,7 +114,7 @@ class ApartmentResidentVerification extends GetView {
                                 print(filter);
                                 return controller.viewAllApartmentApi(
                                     bearerToken:
-                                        controller.userdata!.bearerToken!,
+                                        controller.userdata.bearerToken!,
                                     floorid: controller.floor?.id);
                               },
                               onChanged: (Apartment? apartment) {
@@ -134,8 +136,8 @@ class ApartmentResidentVerification extends GetView {
                               asyncItems: (String filter) async {
                                 print(filter);
                                 return controller.housesApartmentsModelApi(
-                                    subadminid: controller.userdata!.userid!,
-                                    token: controller.userdata!.bearerToken!,
+                                    subadminid: controller.userdata.userid!,
+                                    token: controller.userdata.bearerToken!,
                                     type: 'apartment');
                               },
                               onChanged: (Measurement? data) {

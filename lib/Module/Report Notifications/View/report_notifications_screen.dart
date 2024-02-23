@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -448,17 +450,20 @@ class ReportNotificationsScreen extends GetView {
                                             fontWeight: FontWeight.w500),
                                       ),
                                     );
-                                    ;
+                                    
                                   }
                                 } else if (snapshot.hasError) {
                                   return Icon(Icons.error_outline);
                                 } else {
-                                  return Loader();
+                                  return Center(child: Loader());
                                 }
                               }),
                         )
                       ] else if (controller.status == Status.loading) ...[
-                        Loader(),
+                        Padding(
+                          padding:  EdgeInsets.only(top: 250.h),
+                          child: Loader(),
+                        ),
                       ] else ...[
                         EmptyList(
                           name: 'Something Went Wrong',

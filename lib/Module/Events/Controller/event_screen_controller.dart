@@ -4,9 +4,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:http/http.dart' as Http;
 import 'package:societyadminapp/Module/Events/Model/Event.dart';
 import '../../../Constants/api_routes.dart';
-
 import '../../../Model/User.dart';
-import '../../../Routes/set_routes.dart';
 
 class EventScreenController extends GetxController {
   final ImagePicker imagePicker = ImagePicker();
@@ -19,7 +17,7 @@ class EventScreenController extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
+   
     super.onInit();
 
     userdata = user;

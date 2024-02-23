@@ -18,7 +18,7 @@ class NoticeBoardController extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
+   
     super.onInit();
     print("init");
     userdata = this.user;

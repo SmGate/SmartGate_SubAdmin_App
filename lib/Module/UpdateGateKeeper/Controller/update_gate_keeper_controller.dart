@@ -19,7 +19,7 @@ class UpdateGateKeeperController extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
+    
     super.onInit();
     gatekeeper = argument[0];
     user = argument[1];

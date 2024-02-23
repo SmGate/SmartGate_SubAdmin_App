@@ -20,7 +20,7 @@ class ViewFinanceManagerController extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
+   
     super.onInit();
 
     user = userdata;

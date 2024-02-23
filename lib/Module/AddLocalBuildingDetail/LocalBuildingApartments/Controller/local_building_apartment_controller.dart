@@ -1,10 +1,7 @@
 import 'dart:convert';
 import 'package:get/get.dart';
 import 'package:http/http.dart' as Http;
-import 'package:societyadminapp/Module/AddSocietyDetail/Blocks/Model/Blocks.dart';
-
 import '../../../../Constants/api_routes.dart';
-import '../../../../Services/Shared Preferences/MySharedPreferences.dart';
 import '../../../../Model/User.dart';
 
 import '../Model/LocalBuildingApartment.dart';
@@ -19,8 +16,7 @@ class LocalBuildingApartmentController extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
-
+   
     super.onInit();
 
     user = data[0];

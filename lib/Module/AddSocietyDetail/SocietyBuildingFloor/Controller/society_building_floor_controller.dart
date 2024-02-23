@@ -20,7 +20,7 @@ class SocietyBuildingFloorsController extends GetxController {
   late Future<SocietyBuildingFloor> futureFloors;
   @override
   void onInit() {
-    // TODO: implement onInit
+  
     super.onInit();
     user = data[0];
     buildingid = data[1];

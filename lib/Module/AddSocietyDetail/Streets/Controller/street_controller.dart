@@ -37,8 +37,7 @@ class StreetsController extends GetxController {
 
   @override
   void onInit() async {
-    // TODO: implement onInit
-
+   
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) async {
       super.onInit();
 

@@ -34,7 +34,7 @@ class UpdateFinanceManagerDetailController extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
+  
     super.onInit();
     user = arguments[0];
     financeManager = arguments[1];

@@ -23,8 +23,7 @@ class HomeScreenController extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
-    super.onInit();
+  super.onInit();
     NotificationServices notificationServices = NotificationServices();
     notificationServices.requestNotification();
     notificationServices.fireBaseInit();
@@ -97,8 +96,7 @@ class HomeScreenController extends GetxController {
 
   @override
   void dispose() {
-    // TODO: implement dispose
-    super.dispose();
+   super.dispose();
   }
 
   Future<int?> pendingReportsCountApi(

@@ -181,7 +181,7 @@ class LocalBuildingApartmentResidentVerificationController
 
   @override
   void onInit() {
-    // TODO: implement onInit
+   
     super.onInit();
 
     userdata = data[0];

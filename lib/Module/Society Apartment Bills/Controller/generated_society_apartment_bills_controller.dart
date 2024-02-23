@@ -15,7 +15,7 @@ class GeneratedSocietyApartmentBillsController extends GetxController {
   String? lastname;
   @override
   void onInit() {
-    // TODO: implement onInit
+   
     super.onInit();
 
     user = this.userdata;

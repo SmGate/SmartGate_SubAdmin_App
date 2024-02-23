@@ -65,7 +65,7 @@ class CustomCardHouseStreet extends StatelessWidget {
                       width: 150.w,
                       margin: EdgeInsets.only(left: 58.w, top: 25.h),
                       child: Text(
-                        text!,
+                        text,
                         style: GoogleFonts.ubuntu(
                             fontStyle: FontStyle.normal,
                             // color: secondaryColor,

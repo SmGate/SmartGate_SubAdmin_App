@@ -18,7 +18,7 @@ class ViewResidentController extends GetxController {
   var token = "".obs;
   @override
   void onInit() {
-    // TODO: implement onInit
+   
     super.onInit();
     print("init");
     userdata = this.user;

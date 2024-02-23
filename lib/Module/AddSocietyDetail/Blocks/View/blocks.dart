@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:societyadminapp/Module/AddSocietyDetail/Blocks/Controller/block_controller.dart';
@@ -61,7 +63,7 @@ class Blocks extends GetView {
                                       dynamicid: controller.user.societyid!,
                                       bearerToken: controller.user.bearerToken!)
                                   : controller.blocksApi(
-                                      dynamicid: controller.phaseid!,
+                                      dynamicid: controller.phaseid,
                                       bearerToken:
                                           controller.user.bearerToken!),
                               builder: (BuildContext context,

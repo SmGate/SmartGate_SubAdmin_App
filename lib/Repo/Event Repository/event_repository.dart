@@ -1,4 +1,3 @@
-import 'dart:ui';
 
 import '../../Constants/api_routes.dart';
 import '../../Module/Events/Model/Event.dart';

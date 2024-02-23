@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:badges/badges.dart' as badges;
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

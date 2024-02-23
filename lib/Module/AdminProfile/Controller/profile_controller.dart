@@ -1,5 +1,4 @@
 import 'package:get/get.dart';
-import 'package:societyadminapp/Services/Shared%20Preferences/MySharedPreferences.dart';
 
 import '../../../Model/User.dart';
 
@@ -13,7 +12,7 @@ class ProfileController extends GetxController
 
 @override
   void onInit() {
-    // TODO: implement onInit
+ 
     super.onInit();
 
     this.user=userdata;

@@ -21,8 +21,7 @@ class AddLocalBuildingApartmentsController extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
-
+    
     super.onInit();
 
     user = argumnet[0];

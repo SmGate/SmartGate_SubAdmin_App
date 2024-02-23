@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../Constants/shared_preferences_constants.dart';

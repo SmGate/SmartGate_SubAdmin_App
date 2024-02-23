@@ -8,7 +8,7 @@ class BlockOrBuildingController extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
+  
 
     super.onInit();
 

@@ -20,7 +20,7 @@ class GenerateSocietyApartmentBillsController extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
+  
     super.onInit();
     print("init");
     user = this.userdata;

@@ -271,7 +271,7 @@ class HouseResidentVerificationController extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
+    
     super.onInit();
 
     userdata = data[0];
@@ -371,7 +371,7 @@ class HouseResidentVerificationController extends GetxController {
           unit: resident.measurement!.first.unit));
 
       houseAddressDetailController.text =
-          "${resident.society!.first.name}${','}${resident.phase!.first!.address.toString()}${','}${resident.block!.first.address.toString()}${','}${resident.street!.first!.address.toString()}${','}${resident.property!.first.address.toString()}";
+          "${resident.society!.first.name}${','}${resident.phase!.first.address.toString()}${','}${resident.block!.first.address.toString()}${','}${resident.street!.first.address.toString()}${','}${resident.property!.first.address.toString()}";
     }
     if (resident.society!.first.structuretype == 5) {
       SelectedHouse(House(
@@ -390,7 +390,7 @@ class HouseResidentVerificationController extends GetxController {
           type: resident.measurement!.first.type,
           unit: resident.measurement!.first.unit));
       houseAddressDetailController.text =
-          "${resident.society!.first!.name}${','} ${resident.property!.first.address.toString()}";
+          "${resident.society!.first.name}${','} ${resident.property!.first.address.toString()}";
     }
 
     state = resident.state!;

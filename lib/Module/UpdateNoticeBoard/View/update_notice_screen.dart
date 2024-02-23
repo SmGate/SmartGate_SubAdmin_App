@@ -1,7 +1,8 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:hexcolor/hexcolor.dart';
 import 'package:societyadminapp/Widgets/Extensions/extensions.dart';
 import '../../../Constants/constants.dart';
 import '../../../Routes/set_routes.dart';
@@ -105,7 +106,7 @@ class UpdateNoticeBoardScreen extends GetView {
                                   bearerToken:
                                       controller.userdata!.bearerToken!,
                                   subadminid: controller.userdata!.userid!,
-                                  noticeid: controller.notice!.id!,
+                                  noticeid: controller.notice.id!,
                                 );
                               }
                             } else {

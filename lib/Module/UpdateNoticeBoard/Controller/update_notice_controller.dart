@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -30,15 +32,15 @@ class UpdateNoticeBoardController extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
+    
     super.onInit();
     notice = arguments[0];
     userdata = arguments[1];
 
-    noticetitleController.text = notice!.noticetitle!;
-    noticedescriptionController.text = notice!.noticedetail!;
-    startnoticedateController.text = notice!.startdate!;
-    endnoticedateController.text = notice!.enddate!;
+    noticetitleController.text = notice.noticetitle!;
+    noticedescriptionController.text = notice.noticedetail!;
+    startnoticedateController.text = notice.startdate!;
+    endnoticedateController.text = notice.enddate!;
   }
 
   Future NoticeStartDate(context) async {

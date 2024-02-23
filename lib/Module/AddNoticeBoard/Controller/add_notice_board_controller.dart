@@ -18,7 +18,7 @@ class AddNoticeBoardScreenController extends GetxController {
   int dateTimeVisibility = 0;
   @override
   void onInit() {
-    // TODO: implement onInit
+   
     super.onInit();
     userdata = user;
   }

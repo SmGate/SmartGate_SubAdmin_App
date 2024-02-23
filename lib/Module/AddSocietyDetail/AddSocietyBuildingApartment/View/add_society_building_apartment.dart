@@ -1,12 +1,8 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:societyadminapp/Widgets/Extensions/extensions.dart';
-import 'package:societyadminapp/Widgets/My%20Back%20Button/my_back_button.dart';
-import 'package:societyadminapp/Widgets/My%20Text/my_text.dart';
-import '../../../../Constants/constants.dart';
 import '../../../../Routes/set_routes.dart';
-import '../../../../Widgets/My Button/my_button.dart';
 import '../../Widget/Cutom_Add_Building_Apartment_Screen.dart';
 import '../Controller/add_society_building_controller.dart';
 

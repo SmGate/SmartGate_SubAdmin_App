@@ -23,8 +23,7 @@ class AddBlockOrPhaseBuildingApartmentsController extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
-
+   
     super.onInit();
 
     user = argumnet[0];

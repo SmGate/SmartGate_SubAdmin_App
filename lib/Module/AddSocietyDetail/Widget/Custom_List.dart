@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:societyadminapp/Widgets/Extensions/extensions.dart';
 
 // ignore: must_be_immutable
 class CustomList extends StatelessWidget {

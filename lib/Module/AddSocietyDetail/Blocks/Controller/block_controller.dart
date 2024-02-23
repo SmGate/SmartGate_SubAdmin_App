@@ -33,8 +33,7 @@ class BlocksController extends GetxController {
   int phaseid = 0;
   @override
   void onInit() {
-    // TODO: implement onInit
-
+  
     super.onInit();
 
     // pid=data[0];

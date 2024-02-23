@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 import 'dart:convert';
 
 import 'package:flutter/cupertino.dart';
@@ -18,7 +20,7 @@ class AddPhasesController extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
+  
     super.onInit();
     user = data;
   }

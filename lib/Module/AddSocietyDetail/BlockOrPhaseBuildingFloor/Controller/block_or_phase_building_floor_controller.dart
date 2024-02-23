@@ -23,7 +23,7 @@ class BlockOrPhaseBuildingFloorsController extends GetxController {
   bool isLoading = false;
   @override
   void onInit() {
-    // TODO: implement onInit
+   
     super.onInit();
     user = data[0];
     buildingid = data[1];

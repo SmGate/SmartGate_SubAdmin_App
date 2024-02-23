@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
@@ -38,7 +40,7 @@ class GeneratedSocietyApartmentBills extends StatelessWidget {
                       Expanded(
                         child: FutureBuilder(
                             future: controller.generatedSocietyApartmentBillApi(
-                                controller.user!.userid!,
+                                controller.user.userid!,
                                 controller.user.bearerToken!),
                             builder:
                                 (BuildContext context, AsyncSnapshot snapshot) {

@@ -9,7 +9,7 @@ class ViewImageController extends GetxController
 
   @override
   void onInit() {
-    // TODO: implement onInit
+   
     super.onInit();
     tag=data[0];
     img=data[1];
