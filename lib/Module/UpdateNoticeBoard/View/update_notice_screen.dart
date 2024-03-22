@@ -52,8 +52,7 @@ class UpdateNoticeBoardScreen extends GetView {
                         ),
                         MyTextFormField(
                           maxLines: 1,
-                          // contentPadding: EdgeInsets.symmetric(
-                          //     vertical: 30, horizontal: 20),
+                        
                           fillColor: Colors.white,
                           controller: controller.noticedescriptionController,
                           validator: emptyStringValidator,
