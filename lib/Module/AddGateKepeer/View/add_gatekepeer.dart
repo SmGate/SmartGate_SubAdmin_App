@@ -76,7 +76,7 @@ class AddGateKeeper extends GetView {
                           MyTextFormField(
                             textInputType: TextInputType.number,
                             controller: controller.cnicController,
-                            validator: emptyStringValidator,
+                            validator: validateExpression,
                             hintText: 'Cnic',
                             labelText: 'Cnic',
                           ),

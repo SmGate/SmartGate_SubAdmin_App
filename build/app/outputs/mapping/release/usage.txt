@@ -1015,7 +1015,6 @@ androidx.browser.customtabs.CustomTabsIntent$Builder:
     public androidx.browser.customtabs.CustomTabsIntent$Builder setSecondaryToolbarViews(android.widget.RemoteViews,int[],android.app.PendingIntent)
     public androidx.browser.customtabs.CustomTabsIntent$Builder setSession(androidx.browser.customtabs.CustomTabsSession)
     public androidx.browser.customtabs.CustomTabsIntent$Builder setShareState(int)
-    public androidx.browser.customtabs.CustomTabsIntent$Builder setShowTitle(boolean)
     public androidx.browser.customtabs.CustomTabsIntent$Builder setStartAnimations(android.content.Context,int,int)
     public androidx.browser.customtabs.CustomTabsIntent$Builder setToolbarColor(int)
     public androidx.browser.customtabs.CustomTabsIntent$Builder setToolbarCornerRadiusDp(int)
@@ -8799,6 +8798,7 @@ io.flutter.plugins.sharedpreferences.SharedPreferencesPlugin:
     private static final java.lang.String TAG
     public static void registerWith(io.flutter.plugin.common.PluginRegistry$Registrar)
 io.flutter.plugins.urllauncher.BuildConfig
+io.flutter.plugins.urllauncher.Messages$BrowserOptions$Builder
 io.flutter.plugins.urllauncher.Messages$WebViewOptions$Builder
 io.flutter.plugins.urllauncher.Messages:
     public void <init>()

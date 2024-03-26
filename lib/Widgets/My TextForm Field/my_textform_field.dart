@@ -26,33 +26,34 @@ class MyTextFormField extends GetView {
   final Color? hintTextColor;
   final Color? fillColor;
   final TextInputType? textInputType;
+  void Function(String)? onChanged;
 
   final String? Function(String?)? validator;
   final void Function()? onTap;
-  const MyTextFormField({
-    super.key,
-    this.maxLines,
-    this.textAlign,
-    this.padding,
-    this.readOnly,
-    this.textInputType,
-    this.contentPadding,
-    this.prefixIcon,
-    this.suffixIcon,
-    this.fontWeight,
-    this.fill,
-    this.fontSize,
-    this.onTap,
-    this.width,
-    this.height,
-    this.controller,
-    this.fillColor,
-    this.validator,
-    required this.hintText,
-    this.labelTextColor,
-    required this.labelText,
-    this.hintTextColor,
-  });
+  MyTextFormField(
+      {super.key,
+      this.maxLines,
+      this.textAlign,
+      this.padding,
+      this.readOnly,
+      this.textInputType,
+      this.contentPadding,
+      this.prefixIcon,
+      this.suffixIcon,
+      this.fontWeight,
+      this.fill,
+      this.fontSize,
+      this.onTap,
+      this.width,
+      this.height,
+      this.controller,
+      this.fillColor,
+      this.validator,
+      required this.hintText,
+      this.labelTextColor,
+      required this.labelText,
+      this.hintTextColor,
+      this.onChanged});
 
   Widget build(BuildContext context) {
     return Padding(
@@ -67,6 +68,7 @@ class MyTextFormField extends GetView {
               letterSpacing: 0.05),
 
           keyboardType: textInputType,
+          onChanged: onChanged,
           // obscureText: widget.obscureText,
           textAlign: textAlign ?? TextAlign.start,
           onTap: onTap,

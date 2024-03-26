@@ -61,7 +61,7 @@ class Login extends GetView {
                     MyTextFormField(
                       textInputType: TextInputType.number,
                       controller: controller.userCnicController,
-                      validator: emptyStringValidator,
+                      validator: validateExpression,
                       hintText: 'Enter Cnic',
                       labelText: 'Cnic',
                     ),

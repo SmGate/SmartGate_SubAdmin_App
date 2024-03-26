@@ -1,4 +1,3 @@
-
 import '../../Constants/api_routes.dart';
 import '../../Module/Events/Model/Event.dart';
 import '../../Services/Network Services/network_services.dart';

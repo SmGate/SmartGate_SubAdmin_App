@@ -1,7 +1,7 @@
 # compiler: R8
 # compiler_version: 3.1.66
 # min_api: 22
-# pg_map_id: 4d1c434
+# pg_map_id: e87fba8
 # common_typos_disable
 # {"id":"com.android.tools.r8.mapping","version":"1.0"}
 android.support.v4.app.INotificationSideChannel -> a.a:
@@ -666,6 +666,7 @@ androidx.browser.customtabs.CustomTabsIntent$Builder -> androidx.browser.customt
     androidx.browser.customtabs.CustomTabsIntent build() -> a
     void setCurrentLocaleAsDefaultAcceptLanguage() -> b
     void setSessionParameters(android.os.IBinder,android.app.PendingIntent) -> c
+    androidx.browser.customtabs.CustomTabsIntent$Builder setShowTitle(boolean) -> d
 androidx.collection.ArrayMap -> h.a:
     androidx.collection.MapCollections mCollections -> s
     androidx.collection.MapCollections getCollection() -> m
@@ -21666,15 +21667,21 @@ io.flutter.plugins.sharedpreferences.SharedPreferencesPlugin$ListEncoder -> t3.l
     java.util.List decode(java.lang.String) -> b
 io.flutter.plugins.urllauncher.Messages -> u3.a:
     java.util.ArrayList wrapError(java.lang.Throwable) -> a
-io.flutter.plugins.urllauncher.Messages$FlutterError -> u3.a$a:
+io.flutter.plugins.urllauncher.Messages$BrowserOptions -> u3.a$a:
+    java.lang.Boolean showTitle -> a
+    io.flutter.plugins.urllauncher.Messages$BrowserOptions fromList(java.util.ArrayList) -> a
+    java.lang.Boolean getShowTitle() -> b
+    void setShowTitle(java.lang.Boolean) -> c
+    java.util.ArrayList toList() -> d
+io.flutter.plugins.urllauncher.Messages$FlutterError -> u3.a$b:
     java.lang.String code -> l
     java.lang.Object details -> m
-io.flutter.plugins.urllauncher.Messages$UrlLauncherApi -> u3.a$b:
+io.flutter.plugins.urllauncher.Messages$UrlLauncherApi -> u3.a$c:
     void closeWebView() -> a
     java.lang.Boolean launchUrl(java.lang.String,java.util.Map) -> b
     java.lang.Boolean canLaunchUrl(java.lang.String) -> c
     java.lang.Boolean supportsCustomTabs() -> d
-    java.lang.Boolean openUrlInApp(java.lang.String,java.lang.Boolean,io.flutter.plugins.urllauncher.Messages$WebViewOptions) -> e
+    java.lang.Boolean openUrlInApp(java.lang.String,java.lang.Boolean,io.flutter.plugins.urllauncher.Messages$WebViewOptions,io.flutter.plugins.urllauncher.Messages$BrowserOptions) -> e
 io.flutter.plugins.urllauncher.Messages$UrlLauncherApi$-CC -> u3.g:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
@@ -21702,11 +21709,11 @@ io.flutter.plugins.urllauncher.Messages$UrlLauncherApi$-CC -> u3.g:
       # {"id":"com.android.tools.r8.synthesized"}
     1:1:void setup(io.flutter.plugin.common.BinaryMessenger,io.flutter.plugins.urllauncher.Messages$UrlLauncherApi):0:0 -> l
       # {"id":"com.android.tools.r8.synthesized"}
-io.flutter.plugins.urllauncher.Messages$UrlLauncherApiCodec -> u3.a$c:
+io.flutter.plugins.urllauncher.Messages$UrlLauncherApiCodec -> u3.a$d:
     io.flutter.plugins.urllauncher.Messages$UrlLauncherApiCodec INSTANCE -> d
     java.lang.Object readValueOfType(byte,java.nio.ByteBuffer) -> g
     void writeValue(java.io.ByteArrayOutputStream,java.lang.Object) -> p
-io.flutter.plugins.urllauncher.Messages$WebViewOptions -> u3.a$d:
+io.flutter.plugins.urllauncher.Messages$WebViewOptions -> u3.a$e:
     java.util.Map headers -> c
     java.lang.Boolean enableJavaScript -> a
     java.lang.Boolean enableDomStorage -> b
@@ -21726,14 +21733,14 @@ io.flutter.plugins.urllauncher.UrlLauncher -> u3.i:
     java.lang.Boolean launchUrl(java.lang.String,java.util.Map) -> b
     java.lang.Boolean canLaunchUrl(java.lang.String) -> c
     java.lang.Boolean supportsCustomTabs() -> d
-    java.lang.Boolean openUrlInApp(java.lang.String,java.lang.Boolean,io.flutter.plugins.urllauncher.Messages$WebViewOptions) -> e
+    java.lang.Boolean openUrlInApp(java.lang.String,java.lang.Boolean,io.flutter.plugins.urllauncher.Messages$WebViewOptions,io.flutter.plugins.urllauncher.Messages$BrowserOptions) -> e
     java.lang.String $r8$lambda$Yei5_7tiSedvgLrFYPAfM0Adwuo(android.content.Context,android.content.Intent) -> f
       # {"id":"com.android.tools.r8.synthesized"}
     boolean containsRestrictedHeader(java.util.Map) -> g
     void ensureActivity() -> h
     android.os.Bundle extractBundle(java.util.Map) -> i
     java.lang.String lambda$new$0(android.content.Context,android.content.Intent) -> j
-    boolean openCustomTab(android.content.Context,android.net.Uri,android.os.Bundle) -> k
+    boolean openCustomTab(android.content.Context,android.net.Uri,android.os.Bundle,io.flutter.plugins.urllauncher.Messages$BrowserOptions) -> k
     void setActivity(android.app.Activity) -> l
 io.flutter.plugins.urllauncher.UrlLauncher$IntentResolver -> u3.i$a:
     java.lang.String getHandlerComponentName(android.content.Intent) -> a
